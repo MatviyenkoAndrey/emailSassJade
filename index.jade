@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		link(rel="stylesheet", href="css/main.css")
+	body
+		.email_container
+			.email_header
+				.email_center
+					.email_header_topcolor
+						a.email_logo(href="#")
+							img(src="img/logo.png", alt="")
+						.email_social_wrap
+							a(href="#")
+								img(src="img/soc_twit.png", alt="")
+							a(href="#")
+								img(src="img/soc_vk.png", alt="")
+							a(href="#")
+								img(src="img/soc_facebook.png", alt="")
+					.email_header_top.
+						Самое лучшее предложение из всех, которые вы получали
+					a(href="#").email_button Подробнее
+			.email_content
+				.email_center
+					.email_tizer
+						.email_tizer_item
+							img(src="img/item1.png", alt="")
+							p у нас есть лапки
+						.email_tizer_item
+							img(src="img/item2.png", alt="")
+							p ... и бумажные самолетики
+						.email_tizer_item
+							img(src="img/item3.png", alt="")
+							p Кроме того, у нас есть чемодан
+					.email_sale_text Заказывая сейчас - получаете скидку
+					.mail_products_wrap
+						- for (var x = 1; x < 5; x++)
+							.mail_product_item
+								a(href="#")
+									img(src="img/products_"+x+".jpg", alt="")
+								.main_price 2000 руб.
+								a(href="#").price_button Заказать
+			.email_footer ООО “Лучшее предложение” 
+				a(href="#") Отписаться от рассылки
